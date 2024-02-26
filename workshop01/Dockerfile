@@ -11,6 +11,8 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 5000 available to the world outside this container
-ENV PORT=$PORT
+# ENV PORT=$PORT
 
-CMD gunicorn app:app --bind 0.0.0.0:$PORT --preload
+# CMD gunicorn app:app --bind 0.0.0.0:$PORT --preload
+
+CMD ["python", "app.py"]
