@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #000;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+        }
+        .quote-container {
+            text-align: left;
+            margin-left: 20px;
+        }
+        .quote {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .repository {
+            font-size: 20px;
+            color: #0000EE;
+            text-decoration: none;
+            text-align: center; /* Center align the repository link */
+            width: 100%; /* Make the anchor take the full width */
+        }
+        img {
+            /* Adjust the width as necessary */
+            width: 100px; 
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- This is where the image will be displayed -->
+        <img src="https://scontent.fsin6-1.fna.fbcdn.net/v/t1.18169-9/14523255_10153756066867511_8425294465157458923_n.png?_nc_cat=104&ccb=1-7&_nc_sid=be3454&_nc_ohc=rzln8bIoKocAX9akLVz&_nc_ht=scontent.fsin6-1.fna&oh=00_AfDFxQz-wjebDHGGL1pp1VpRrwkePwmg2W1Igukky__Eqg&oe=6603DBDE" alt="Descriptive Alt Text">
+
+        <!-- Container for quote and repository link -->
+        <div class="quote-container">
+            <!-- This is where the random quote will be displayed -->
+            <p class="quote">{{ quote }}</p>
+            <!-- This is where the repository link will be displayed -->
+            <a href="https://github.com/ianhojy/myrepo" class="repository">Repository https://github.com/ianhojy/myrepo</a>
+        </div>
+    </div>
+</body>
+</html>
